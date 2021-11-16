@@ -1,0 +1,164 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: Verdana,Arial;
+}
+
+header {
+	width: 1060px;
+	height: 48px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 0;
+	overflow: hidden;
+}
+
+#myanimelist {
+	width: 1060px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 0;
+}
+
+#menu {
+	display: flex;
+	background: #2e51a2;
+	width: 1060px;
+	height: auto;
+}
+
+#menu-left {
+	width: 50%;
+}
+
+#menu-left ul {
+	display: inline-flex;
+	list-style-type: none;
+	padding: 0px;
+}
+
+#menu-left ul li {
+	width: auto;
+	padding: 7px 10px 8px 10px;
+}
+
+#menu-left ul li a {
+	text-decoration: none;
+	color: white;
+	font-size: 13px;
+	font-weight: bold;
+	cursor: context-menu;
+}
+
+#menu-left ul li:hover {
+	background: #e1e7f5;
+}
+
+#menu-left ul li:hover a {
+	color: black;
+}
+
+#menu-left ul li .sub-menu {
+	display: none;
+}
+
+#menu-left ul li:hover .sub-menu {
+	display: block;
+	position: absolute;
+	background: #e1e7f5;
+	margin-top: 8px;
+	margin-left: -10px;
+}
+
+#menu-left ul li:hover .sub-menu li {
+	min-width: 103px;
+	padding: 7px 20px 8px 10px;
+	cursor: pointer;
+}
+
+#menu-left ul li:hover .sub-menu li a {
+	font-size: 11px;
+	font-weight: normal;
+	cursor: pointer;
+}
+
+#menu-left ul li:hover .sub-menu li:hover {
+	background: #2e51a2;
+}
+
+#menu-left ul li:hover .sub-menu li:hover a{
+	color: white;
+}
+
+#menu-right {
+	width: 50%;
+	text-align: right;
+}
+
+#menu-right form{
+	height: 100%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+#menu-right form select{
+	height: 21px;
+	margin-top: 1px;
+	margin-right: 1px;
+	display: inline-block;
+	background-image: url('icon-triangles.png');
+	background-repeat: no-repeat;
+	background-position: 75px 5px;
+	background-size: 10px 93px;
+	width: 90px;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	font-family: Avenir,lucida grande,tahoma,verdana,arial,sans-serif;
+	padding: 2px 20px 2px 8px;
+	font-size: 11px;
+	appearance: none;
+}
+
+#menu-right form select option {
+	font-family: Avenir,lucida grande,tahoma,verdana,arial,sans-serif;
+}
+
+#menu-right form #search {
+	display: inline-block;
+	width: 291px;
+	height: 20px;
+	padding: 2px 0 2px 5px;
+	font-size: 10px;
+	border: none;
+	outline: none;
+}
+
+#menu-right form i {
+	position: absolute;
+	width: 26px;
+	height: 20px;
+	right: 163px;
+	top: 55px;
+	font-size: 12px;
+	color: #b2bec3;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	pointer-events: none;
+}
+
+#menu-right form #topSearchButton {
+	height: 20px;
+	width: 26px;
+	margin: 0;
+	border: none;
+	margin-right: 10px;
+	background-color: ;
+	width: 26px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
